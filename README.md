@@ -16,13 +16,14 @@ conda create --name robotEnv python=3.8.10
 conda activate robotEnv
 ```
 
-3. Install the required dependencies
+# How to run the YoloV5 CV model
+1. Install the required dependencies
 ```sh
 cd winter-soldier/yolov5
 pip install -r requirements.txt
 ``` 
 
-4. Run the detection model filtered for humans from shell
+2. Run the detection model filtered for humans from shell
 ```sh
 sh human_detection.sh
 ```
