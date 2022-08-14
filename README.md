@@ -26,3 +26,15 @@ pip install -r requirements.txt
 ```sh
 sh human_detection.sh
 ```
+
+# Running the front-end application
+1. Install the required dependencies for node
+```sh
+cd client
+npm install
+```
+
+2. Start the application, by default, it will run on localhost:3000
+```sh
+npm start
+```
