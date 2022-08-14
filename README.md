@@ -13,6 +13,7 @@ git clone https://github.com/tjunjet/winter-soldier.git
 2. Create a conda environment, we will be using Python 3.8.10 for this
 ```sh
 conda create --name robotEnv python=3.8.10
+conda activate robotEnv
 ```
 
 3. Install the required dependencies
