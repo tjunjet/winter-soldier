@@ -31,7 +31,7 @@ sh human_detection.sh
 # Running the front-end application
 1. Install the required dependencies for node
 ```sh
-cd client
+cd controller
 npm install
 ```
 
