@@ -39,3 +39,11 @@ npm install
 ```sh
 npm start
 ```
+
+# Running the flask application on the Nano
+1. Go into the YoloV5 directory and run flask
+```
+cd winter-soldier/yolov5
+flask run -h 0.0.0.0
+```
+
