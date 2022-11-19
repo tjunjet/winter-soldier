@@ -167,12 +167,23 @@ def run(
                         c = int(cls)  # integer class
                         label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                         annotator.box_label(xyxy, label, color=colors(c, True))
+                        obj_x=(xyxy[0]+xyxy[2])/2
+                        obj_y=(xyxy[1]+xyxy[3])/2
+                        center_x=480/2
+                        center_y=640/2
+                        # Comparing the tensors
+                        if (obj_x < center_x):
+                            print("TOO LEFT")
+                        else:
+                            print("TOO RIGHT")
+                        # TODO based on bounding box width, check whether the robot is too close or too far
+                        
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
 
             # Stream results
             im0 = annotator.result()
-            print(im0)
+            # print(im0)
             if view_img:
                 if p not in windows:
                     windows.append(p)
